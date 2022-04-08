@@ -1,0 +1,1 @@
+# @openeagle/prettier-config

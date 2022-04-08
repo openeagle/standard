@@ -1,0 +1,1 @@
+# @openeagle/stylelint-config
