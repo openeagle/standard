@@ -1,6 +1,6 @@
 {
   "name": "@openeagle/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -17,7 +17,7 @@
     "prettier": ">= 2.0.0"
   },
   "devDependencies": {
-    "@openeagle/eslint-config-base": "^1.0.0",
+    "@openeagle/eslint-config-base": "1.0.0-beta.1",
     "eslint": "^7.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.0.0"
