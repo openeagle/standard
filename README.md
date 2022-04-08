@@ -8,6 +8,6 @@
 
 ## 使用说明
 
-- [vue2](./docs/vue2.md)
-- [vue3 + tsx](./docs/vue3-tsx.md)
+- [vue2](./docs/rules/integration/vue2.md)
+- [vue3 + tsx](./docs/rules/integration/vue3-tsx.md)
 
