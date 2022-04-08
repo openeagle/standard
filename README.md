@@ -10,4 +10,3 @@
 
 - [vue2](./docs/rules/integration/vue2.md)
 - [vue3 + tsx](./docs/rules/integration/vue3-tsx.md)
-
