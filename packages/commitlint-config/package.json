@@ -1,6 +1,6 @@
 {
   "name": "@openeagle/commitlint-config",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "commit msg linter",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "@commitlint/cli": "^13.1.0"
   },
   "devDependencies": {
-    "@openeagle/eslint-config-base": "^1.0.0",
-    "@openeagle/prettier-config": "^1.0.0",
+    "@openeagle/eslint-config-base": "1.0.0-beta.1",
+    "@openeagle/prettier-config": "1.0.0-beta.1",
     "eslint": "^7.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.0.0",
