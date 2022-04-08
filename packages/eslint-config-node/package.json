@@ -1,0 +1,28 @@
+{
+  "name": "@openeagle/eslint-config-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "rules",
+    "index.js",
+    "typescript.js"
+  ],
+  "scripts": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "peerDependencies": {
+    "eslint": ">= 7.0.0"
+  },
+  "dependencies": {
+    "@openeagle/eslint-config-base": "^1.0.0"
+  },
+  "devDependencies": {
+    "@openeagle/prettier-config": "^1.0.0",
+    "eslint": "^7.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.0.0"
+  }
+}

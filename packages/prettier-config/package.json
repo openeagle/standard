@@ -1,0 +1,25 @@
+{
+  "name": "@openeagle/prettier-config",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test:js": "prettier ./examples/**/*.js",
+    "test:md": "prettier ./examples/**/*.md",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "peerDependencies": {
+    "prettier": ">= 2.0.0"
+  },
+  "devDependencies": {
+    "@openeagle/eslint-config-base": "^1.0.0",
+    "eslint": "^7.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.0.0"
+  }
+}
