@@ -1,0 +1,1 @@
+# @openeagle/eslint-config-base
