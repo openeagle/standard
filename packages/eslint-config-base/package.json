@@ -28,7 +28,7 @@
     "eslint-import-resolver-alias": "^1.0.1"
   },
   "devDependencies": {
-    "@openeagle/prettier-config": "^1.0.0",
+    "@openeagle/prettier-config": "1.0.0",
     "eslint": "^7.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.0.0",
