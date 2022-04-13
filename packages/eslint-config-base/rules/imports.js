@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['import'],
+  plugins: ['eslint-plugin-import'],
 
   settings: {
     'import/resolver': {

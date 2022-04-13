@@ -12,17 +12,20 @@
     "stylelint": ">= 13.0.0"
   },
   "dependencies": {
-    "stylelint-config-prettier": "^8.0.0",
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-prettier": "^1.0.0",
-    "stylelint-order": "^4.0.0"
+    "postcss-html": "^1.3.0",
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.0",
+    "stylelint-config-prettier": "^9.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-order": "^5.0.0"
   },
   "devDependencies": {
-    "@openeagle/eslint-config-base": "1.0.0",
-    "@openeagle/prettier-config": "1.0.0",
-    "eslint": "^7.0.0",
-    "lint-staged": "^11.0.0",
+    "@openeagle/eslint-config-base": "^1.0.0",
+    "@openeagle/prettier-config": "^1.0.0",
+    "eslint": "^8.0.0",
+    "lint-staged": "^12.0.0",
     "prettier": "^2.0.0",
-    "stylelint": "^13.0.0"
+    "stylelint": "^14.0.0"
   }
 }

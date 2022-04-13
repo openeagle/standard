@@ -10,11 +10,11 @@
     "@openeagle/eslint-config-vue": "^1.1.0",
     "@openeagle/stylelint-config": "^1.0.0",
     "@openeagle/prettier-config": "^1.0.9",
-    "eslint": "^7.0.0",
+    "eslint": "^8.0.0",
     "husky": "^7.0.1",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^12.0.0",
     "prettier": "^2.0.0",
-    "stylelint": "^13.0.0"
+    "stylelint": "^14.0.0"
   }
 }
 ```
@@ -60,10 +60,10 @@ npx husky add .husky/pre-commit "npm run pre-commit"
       "scripts": {
         "prepare": "husky install",
         "lint:js": "eslint --ext .js,.vue ./src",
-        "lint:css": "stylelint ./src/**/*.{css,less,sass,scss,vue}",
+        "lint:css": "stylelint --allow-empty-input \"./**/*.(css|less|scss|vue)\"",
         "lint": "npm run lint:js && npm run lint:css",
         "format:js": "eslint --fix --ext .js,.vue ./src",
-        "format:css": "stylelint --fix ./src/**/*.{css,less,sass,scss,vue}",
+        "format:css": "stylelint --fix --allow-empty-input \"./**/*.(css|less|scss|vue)\"",
         "format": "npm run format:js && npm run format:css",
         "pre-commit": "lint-staged"
       },

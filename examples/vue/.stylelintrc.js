@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@openeagle/stylelint-config/strict']
+  extends: ['@openeagle/stylelint-config']
 }

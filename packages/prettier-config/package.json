@@ -17,9 +17,9 @@
     "prettier": ">= 2.0.0"
   },
   "devDependencies": {
-    "@openeagle/eslint-config-base": "1.0.0",
-    "eslint": "^7.0.0",
-    "lint-staged": "^11.0.0",
+    "@openeagle/eslint-config-base": "^1.0.0",
+    "eslint": "^8.0.0",
+    "lint-staged": "^12.0.0",
     "prettier": "^2.0.0"
   }
 }
