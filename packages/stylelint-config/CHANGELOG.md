@@ -1,3 +1,10 @@
+## @openeagle/stylelint-config [1.0.2](https://github.com/openeagle/standard/compare/@openeagle/stylelint-config@1.0.1...@openeagle/stylelint-config@1.0.2) (2022-04-16)
+
+
+### Bug Fixes
+
+* styelint-config 增加 postcss 依赖 ([5851037](https://github.com/openeagle/standard/commit/5851037d7fc4979ffc1e216c21aaeab4b998004e))
+
 ## @openeagle/stylelint-config [1.0.1](https://github.com/openeagle/standard/compare/@openeagle/stylelint-config@1.0.0...@openeagle/stylelint-config@1.0.1) (2022-04-16)
 
 
