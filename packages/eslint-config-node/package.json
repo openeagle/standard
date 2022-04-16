@@ -1,6 +1,6 @@
 {
   "name": "@openeagle/eslint-config-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "files": [
     "rules",
@@ -17,7 +17,7 @@
     "eslint": ">= 7.0.0"
   },
   "dependencies": {
-    "@openeagle/eslint-config-base": "1.0.0"
+    "@openeagle/eslint-config-base": "1.0.1"
   },
   "devDependencies": {
     "@openeagle/prettier-config": "^1.0.0",
