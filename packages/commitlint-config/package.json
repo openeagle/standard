@@ -13,16 +13,16 @@
     "eslint": ">= 7.0.0"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^13.1.0",
-    "@commitlint/cli": "^13.1.0"
+    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/cli": "^16.2.3"
   },
   "devDependencies": {
-    "@openeagle/eslint-config-base": "1.0.0",
-    "@openeagle/prettier-config": "1.0.0",
-    "eslint": "^7.0.0",
-    "lint-staged": "^11.0.0",
+    "@openeagle/eslint-config-base": "^1.0.0",
+    "@openeagle/prettier-config": "^1.0.0",
+    "eslint": "^8.0.0",
+    "lint-staged": "^12.0.0",
     "prettier": "^2.0.0",
-    "stylelint": "^13.0.0"
+    "stylelint": "^14.0.0"
   },
   "author": "openeagle",
   "license": "MIT"

@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    'prettier/prettier': true,
+    'selector-class-pattern': null,
     'selector-pseudo-class-no-unknown': [
       true,
       {
