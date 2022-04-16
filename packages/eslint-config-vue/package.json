@@ -20,7 +20,6 @@
   },
   "dependencies": {
     "@openeagle/eslint-config-base": "^1.0.0",
-    "@vue/eslint-config-typescript": "^10.0.0",
     "eslint-plugin-vue": "^8.0.0"
   },
   "devDependencies": {
