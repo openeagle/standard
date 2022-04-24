@@ -23,10 +23,9 @@ module.exports = {
           title: '语言',
           collapsable: false,
           children: [
+            ['language/html', 'html'],
             ['language/css', 'css'],
             ['language/javascript', 'javascript'],
-            ['language/nodejs', 'nodejs'],
-            ['language/typescript', 'typescript'],
           ],
         },
         {
@@ -36,7 +35,6 @@ module.exports = {
             ['framework/vue2', 'vue2'],
             ['framework/vue3', 'vue3'],
             ['framework/react', 'react'],
-            ['framework/react-native', 'react-native'],
           ],
         },
         {
@@ -54,7 +52,6 @@ module.exports = {
           children: [
             ['integration/vue2', 'vue2'],
             ['integration/vue3-tsx', 'vue3 + tsx'],
-            ['integration/node', 'node.js'],
           ],
         },
       ],

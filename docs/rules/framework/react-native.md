@@ -1,3 +1,0 @@
-# React Native
-
-N/A

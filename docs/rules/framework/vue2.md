@@ -1,3 +1,3 @@
-# vue
+# vue2
 
-参考 [https://cn.vuejs.org/v2/style-guide/index.html](https://cn.vuejs.org/v2/style-guide/index.html)，基于官方的文档制定我们的 vue2 项目开发规范
+参考 [Vue2 风格指南](https://cn.vuejs.org/v2/style-guide/index.html)。
