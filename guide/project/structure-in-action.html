@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>项目结构优化实战 | 开发规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端开发规范">
+    
+    <link rel="preload" href="/standard/assets/css/0.styles.252629f3.css" as="style"><link rel="preload" href="/standard/assets/js/app.afa9e7b9.js" as="script"><link rel="preload" href="/standard/assets/js/2.333b2885.js" as="script"><link rel="preload" href="/standard/assets/js/13.62609024.js" as="script"><link rel="prefetch" href="/standard/assets/js/10.10c9e6b9.js"><link rel="prefetch" href="/standard/assets/js/11.cc0ebb4a.js"><link rel="prefetch" href="/standard/assets/js/12.b7d2c769.js"><link rel="prefetch" href="/standard/assets/js/14.4b3b23a7.js"><link rel="prefetch" href="/standard/assets/js/15.b2eadcff.js"><link rel="prefetch" href="/standard/assets/js/16.d27cf8a7.js"><link rel="prefetch" href="/standard/assets/js/17.06f69259.js"><link rel="prefetch" href="/standard/assets/js/18.5925d2fc.js"><link rel="prefetch" href="/standard/assets/js/19.48150cec.js"><link rel="prefetch" href="/standard/assets/js/20.79b0b899.js"><link rel="prefetch" href="/standard/assets/js/21.09244465.js"><link rel="prefetch" href="/standard/assets/js/22.15849aa4.js"><link rel="prefetch" href="/standard/assets/js/23.2d3fab8c.js"><link rel="prefetch" href="/standard/assets/js/24.b031e604.js"><link rel="prefetch" href="/standard/assets/js/25.88b45d54.js"><link rel="prefetch" href="/standard/assets/js/26.7793f56a.js"><link rel="prefetch" href="/standard/assets/js/27.741bd2ad.js"><link rel="prefetch" href="/standard/assets/js/28.bf45fa5d.js"><link rel="prefetch" href="/standard/assets/js/3.5d30b8ab.js"><link rel="prefetch" href="/standard/assets/js/4.642162c5.js"><link rel="prefetch" href="/standard/assets/js/5.3730c3d2.js"><link rel="prefetch" href="/standard/assets/js/6.169b96df.js"><link rel="prefetch" href="/standard/assets/js/7.2b6e93a3.js"><link rel="prefetch" href="/standard/assets/js/8.d13c589c.js"><link rel="prefetch" href="/standard/assets/js/9.836af9a0.js">
+    <link rel="stylesheet" href="/standard/assets/css/0.styles.252629f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/standard/" class="home-link router-link-active"><!----> <span class="site-name">开发规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/guide/tools/stylelint-order.html" class="sidebar-link">Stylelint-order</a></li><li><a href="/standard/guide/tools/commit-linter.html" class="sidebar-link">Commit-linter</a></li><li><a href="/standard/guide/tools/git-command.html" class="sidebar-link">Git Command</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/guide/project/structure-in-action.html" aria-current="page" class="active sidebar-link">项目结构优化实战</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="项目结构优化实战"><a href="#项目结构优化实战" class="header-anchor">#</a> 项目结构优化实战</h1> <p>如下所示是某个项目的组织结构</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">.</span>
+├── public
+│   ├── images
+│   ├── js
+│   ├── css
+│   ├── favicon.ico
+│   ├── index.html
+│   └── version.txt
+├── src
+│   ├── api
+│   ├── assets
+│   │   ├── css
+│   │   │   └── activityXXX.scss
+│   │   │   └── activityYYY.scss
+│   │   │   └── activityZZZ.scss
+│   │   └── images
+│   │       ├── activityXXX
+│   │       ├── activityYYY
+│   │       ├── activityZZZ
+│   │       └── <span class="token punctuation">..</span>.
+│   ├── components
+│   │   ├── Xyz.vue
+│   │   ├── x-y-z.vue
+│   │   └── xYz.vue
+│   ├── config
+│   ├── directive
+│   ├── filters
+│   ├── mixins
+│   ├── router
+│   ├── store
+│   ├── types
+│   ├── utils
+│   ├── views
+│   │   ├── activities
+│   │   │   ├── activity1
+│   │   │   ├── activity2
+│   │   │   ├── activity3
+│   │   ├── activityXxx
+│   │   │   └──  index.vue
+│   │   ├── activituYyy
+│   │   │   └── Index.vue
+│   │   ├── allOrder
+│   │   │   └── index.vue
+│   │   ├── orderDetail
+│   │   │   └── Index.vue
+│   │   ├── guide
+│   │   │   └── Index.vue
+│   │   ├── goods
+│   │   │   └── Index.vue
+│   │   ├── xxxGoods
+│   │   │   └── Index.vue
+│   │   ├── yyyGoods
+│   │   │   └── Index.vue
+│   │   ├── zzzGoods
+│   │   │   └── Index.vue
+│   │   ├── license
+│   │   ├── not-found
+│   │   ├── openSectionActivies
+│   │   │   └── index.vue
+│   │   └── Index.vue
+│   ├── App.vue
+│   ├── main.js
+│   └── shims-vue.d.ts
+├── README.md
+├── babel.config.js
+├── jsconfig.json
+├── package.json
+├── postcss.config.js
+├── tsconfig.json
+├── vue.config.js
+└── yarn.lock
+</code></pre></div><p>存在哪些问题？</p> <ol><li><p>静态资源全部放在全局的 <code>./src/assets</code> 目录下，且没有明确的管理模式，导致在组件引用静态资源的时候需要使用复杂的相对路径应用，例如：<code>../../../images/pay/vip_bg.png</code>。</p> <p>虽然可以配置别名直接从根目录开始引用，但大多项目都没有配置，或者开发人员不懂得如何配置。此外，一个 UI 组件的组成部分就是应该由模板、代码、样式和静态资源，这些都应该放在一块才能更加方便的维护。</p></li> <li><p>所有接口请求都放在了网络请求层目录里了，导致随着业务的迭代，全局目录下的 API 越来越多，可阅读性变差，后续维护成本也变得越来越高。</p> <p>开发人员需要区分某个接口是否是全局共用的还是特定场景使用的，如果不需要全局复用，请把相关的接口请求封装在各自的业务模块里。</p></li> <li><p>全局组件目录的问题和网络请求接口类似，在该目录下放置了太多特定场景使用的组件了。</p> <p>将模块放到全局目录下时，开发人员都应该慎重考虑，全局组件目录更应该放置一些业务无关的基础组件。如果大家在开发的过程中无法判定放在哪里，可以先放业务模块里，在后续开发过程中再考虑是否封装到全局。</p></li> <li><p>路由页面的子目录没有规范的管理模式，不同的开发人员因个人喜好不同创建了不同的目录，而且命名规则也不一致。</p> <p>现有的会员路由目录没有明确的业务模块划分，每个路由大多都是平铺放在根目录下，导致 会员项目主要包含四块业务：会员中心、会员频道、会员活动和会员订单，开发者</p></li></ol> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p><strong>分而治之</strong></p> <blockquote><p>分而治之是一种很古老但很实用的策略，或者说战略。本意即使将一个较大的力量打碎分成小的力量，这样每个小的力量都不足以对抗大的力量。在现实应用中，分而治之往往是阻止小力量联合起来的策略。</p> <p>在计算机科学中，分治法是建基于多项分支递归的一种很重要的算法范式。字面上的解释是“分而治之”，就是把一个复杂的问题分成两个或更多的相同或相似的子问题，直到最后子问题可以简单的直接求解，原问题的解即子问题的解的合并。这个技巧是很多高效算法的基础，如排序算法（快速排序、归并排序）、傅立叶变换（快速傅立叶变换）。</p></blockquote> <p>在我们项目开发中也是同样的，我们应该将一个项目按一定的规则拆分成一个个小模块，从而降低我们的开发难度，反之如果项目内部没有合理的划分规则，导致一个个小问题交差组合变成了一个大问题，也就成了“屎山”。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/standard/guide/tools/git-command.html" class="prev">
+        Git Command
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/standard/assets/js/app.afa9e7b9.js" defer></script><script src="/standard/assets/js/2.333b2885.js" defer></script><script src="/standard/assets/js/13.62609024.js" defer></script>
+  </body>
+</html>

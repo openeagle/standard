@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3 + tsx | 开发规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端开发规范">
+    
+    <link rel="preload" href="/standard/assets/css/0.styles.252629f3.css" as="style"><link rel="preload" href="/standard/assets/js/app.afa9e7b9.js" as="script"><link rel="preload" href="/standard/assets/js/2.333b2885.js" as="script"><link rel="preload" href="/standard/assets/js/22.15849aa4.js" as="script"><link rel="prefetch" href="/standard/assets/js/10.10c9e6b9.js"><link rel="prefetch" href="/standard/assets/js/11.cc0ebb4a.js"><link rel="prefetch" href="/standard/assets/js/12.b7d2c769.js"><link rel="prefetch" href="/standard/assets/js/13.62609024.js"><link rel="prefetch" href="/standard/assets/js/14.4b3b23a7.js"><link rel="prefetch" href="/standard/assets/js/15.b2eadcff.js"><link rel="prefetch" href="/standard/assets/js/16.d27cf8a7.js"><link rel="prefetch" href="/standard/assets/js/17.06f69259.js"><link rel="prefetch" href="/standard/assets/js/18.5925d2fc.js"><link rel="prefetch" href="/standard/assets/js/19.48150cec.js"><link rel="prefetch" href="/standard/assets/js/20.79b0b899.js"><link rel="prefetch" href="/standard/assets/js/21.09244465.js"><link rel="prefetch" href="/standard/assets/js/23.2d3fab8c.js"><link rel="prefetch" href="/standard/assets/js/24.b031e604.js"><link rel="prefetch" href="/standard/assets/js/25.88b45d54.js"><link rel="prefetch" href="/standard/assets/js/26.7793f56a.js"><link rel="prefetch" href="/standard/assets/js/27.741bd2ad.js"><link rel="prefetch" href="/standard/assets/js/28.bf45fa5d.js"><link rel="prefetch" href="/standard/assets/js/3.5d30b8ab.js"><link rel="prefetch" href="/standard/assets/js/4.642162c5.js"><link rel="prefetch" href="/standard/assets/js/5.3730c3d2.js"><link rel="prefetch" href="/standard/assets/js/6.169b96df.js"><link rel="prefetch" href="/standard/assets/js/7.2b6e93a3.js"><link rel="prefetch" href="/standard/assets/js/8.d13c589c.js"><link rel="prefetch" href="/standard/assets/js/9.836af9a0.js">
+    <link rel="stylesheet" href="/standard/assets/css/0.styles.252629f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/standard/" class="home-link router-link-active"><!----> <span class="site-name">开发规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/standard/rules/introduction.html" class="sidebar-link">介绍</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/rules/basic/naming.html" class="sidebar-link">命名</a></li><li><a href="/standard/rules/basic/tool.html" class="sidebar-link">工具</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>语言</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/rules/language/html.html" class="sidebar-link">html</a></li><li><a href="/standard/rules/language/css.html" class="sidebar-link">css</a></li><li><a href="/standard/rules/language/javascript.html" class="sidebar-link">javascript</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/rules/framework/vue2.html" class="sidebar-link">vue2</a></li><li><a href="/standard/rules/framework/vue3.html" class="sidebar-link">vue3</a></li><li><a href="/standard/rules/framework/react.html" class="sidebar-link">react</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/rules/project/structure.html" class="sidebar-link">组织结构</a></li><li><a href="/standard/rules/project/version.html" class="sidebar-link">版本管理</a></li><li><a href="/standard/rules/project/archive.html" class="sidebar-link">归档管理</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>集成</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/rules/integration/vue2.html" class="sidebar-link">vue2</a></li><li><a href="/standard/rules/integration/vue3-tsx.html" aria-current="page" class="active sidebar-link">vue3 + tsx</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue3-tsx"><a href="#vue3-tsx" class="header-anchor">#</a> vue3 + tsx</h1> <p>需要去掉原有项目中的所有 eslint、prettier、husky、lint-staged、stylelint 依赖。</p> <h3 id="monorepo-项目"><a href="#monorepo-项目" class="header-anchor">#</a> Monorepo 项目</h3> <h4 id="_1、安装依赖"><a href="#_1、安装依赖" class="header-anchor">#</a> 1、安装依赖</h4> <ul><li><p><code>./package.json</code>：项目根配置</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>./pacakges/xxx/package.json</code>：项目包配置</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@openeagle/eslint-config-vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@openeagle/stylelint-config&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eslint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^12.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;stylelint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^14.0.0&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul> <h4 id="_2、安装-git-钩子"><a href="#_2、安装-git-钩子" class="header-anchor">#</a> 2、安装 Git 钩子</h4> <p>项目根目录运行</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code>npx husky install
+npx husky add <span class="token punctuation">.</span>husky<span class="token operator">/</span>pre<span class="token operator">-</span>commit <span class="token string">&quot;yarn workspaces run pre-commit&quot;</span>
+</code></pre></div><h4 id="_3、配置项目"><a href="#_3、配置项目" class="header-anchor">#</a> 3、配置项目</h4> <ul><li><p><code>./package.json</code>：项目根配置</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;husky install&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>./pacakges/xxx/.eslintrc.js</code>：项目包 eslint 配置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">root</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@openeagle/eslint-config-vue/typescript'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">settings</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 解决 vscode 报错问题</span>
+    <span class="token string-property property">'import/resolver'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">alias</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">map</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">[</span><span class="token string">'~'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">[</span><span class="token string">'@'</span><span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>./pacakges/xxx/.stylelintrc.js</code>：项目包 stylelint 配置</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@openeagle/stylelint-config'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>./pacakges/xxx/.prettierrc.js</code>：项目包 prettier 配置</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@openeagle/prettier-config'</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li><p><code>./pacakges/xxx/package.json</code>：项目包配置</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;lint:js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --ext .js,.vue ./src&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint:css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint --allow-empty-input \&quot;./**/*.(css|less|scss|vue)\&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run lint:js &amp;&amp; npm run lint:css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format:js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --fix --ext .js,.vue ./src&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format:css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint --fix --allow-empty-input \&quot;./**/*.(css|less|scss|vue)\&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run format:js &amp;&amp; npm run format:css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;*.{vue,ts,tsx,js,jsx}&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --fix&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.{vue,css,less,sass,scss}&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint --fix&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul> <h4 id="_4、验证"><a href="#_4、验证" class="header-anchor">#</a> 4、验证</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">yarn</span> workspaces run pre-commit
+</code></pre></div><h3 id="普通项目"><a href="#普通项目" class="header-anchor">#</a> 普通项目</h3> <h4 id="_1、安装依赖-2"><a href="#_1、安装依赖-2" class="header-anchor">#</a> 1、安装依赖</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@openeagle/eslint-config-vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@openeagle/stylelint-config&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;eslint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^12.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;stylelint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^14.0.0&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="_2、安装-git-钩子-2"><a href="#_2、安装-git-钩子-2" class="header-anchor">#</a> 2、安装 Git 钩子</h4> <div class="language-jsx extra-class"><pre class="language-jsx"><code>npx husky install
+npx husky add <span class="token punctuation">.</span>husky<span class="token operator">/</span>pre<span class="token operator">-</span>commit <span class="token string">&quot;npm run pre-commit&quot;</span>
+</code></pre></div><h4 id="_3、配置项目-2"><a href="#_3、配置项目-2" class="header-anchor">#</a> 3、配置项目</h4> <ul><li><p><code>.eslintrc.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">root</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@openeagle/eslint-config-vue/typescript'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>.stylelintrc.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@openeagle/stylelint-config'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p><code>.prettierrc.js</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@openeagle/prettier-config'</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li><p><code>package.json</code></p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;husky install&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint:js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --ext .js,.vue ./src&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint:css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint ./src/**/*.{css,less}&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run lint:js &amp;&amp; npm run lint:css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format:js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --fix --ext .js,.vue ./src&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format:css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint --fix ./src/**/*.{css,less}&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;format&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run format:js &amp;&amp; npm run format:css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;*.{vue,ts,tsx,js,jsx}&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --fix&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.{vue,css,less,sass,scss}&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint --fix&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul> <h4 id="_4、验证-2"><a href="#_4、验证-2" class="header-anchor">#</a> 4、验证</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">npm</span> run pre-commit
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/standard/rules/integration/vue2.html" class="prev">
+        vue2
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/standard/assets/js/app.afa9e7b9.js" defer></script><script src="/standard/assets/js/2.333b2885.js" defer></script><script src="/standard/assets/js/22.15849aa4.js" defer></script>
+  </body>
+</html>

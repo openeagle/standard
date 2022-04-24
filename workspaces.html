@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>workspaces的使用 | 开发规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端开发规范">
+    
+    <link rel="preload" href="/standard/assets/css/0.styles.252629f3.css" as="style"><link rel="preload" href="/standard/assets/js/app.afa9e7b9.js" as="script"><link rel="preload" href="/standard/assets/js/2.333b2885.js" as="script"><link rel="preload" href="/standard/assets/js/28.bf45fa5d.js" as="script"><link rel="prefetch" href="/standard/assets/js/10.10c9e6b9.js"><link rel="prefetch" href="/standard/assets/js/11.cc0ebb4a.js"><link rel="prefetch" href="/standard/assets/js/12.b7d2c769.js"><link rel="prefetch" href="/standard/assets/js/13.62609024.js"><link rel="prefetch" href="/standard/assets/js/14.4b3b23a7.js"><link rel="prefetch" href="/standard/assets/js/15.b2eadcff.js"><link rel="prefetch" href="/standard/assets/js/16.d27cf8a7.js"><link rel="prefetch" href="/standard/assets/js/17.06f69259.js"><link rel="prefetch" href="/standard/assets/js/18.5925d2fc.js"><link rel="prefetch" href="/standard/assets/js/19.48150cec.js"><link rel="prefetch" href="/standard/assets/js/20.79b0b899.js"><link rel="prefetch" href="/standard/assets/js/21.09244465.js"><link rel="prefetch" href="/standard/assets/js/22.15849aa4.js"><link rel="prefetch" href="/standard/assets/js/23.2d3fab8c.js"><link rel="prefetch" href="/standard/assets/js/24.b031e604.js"><link rel="prefetch" href="/standard/assets/js/25.88b45d54.js"><link rel="prefetch" href="/standard/assets/js/26.7793f56a.js"><link rel="prefetch" href="/standard/assets/js/27.741bd2ad.js"><link rel="prefetch" href="/standard/assets/js/3.5d30b8ab.js"><link rel="prefetch" href="/standard/assets/js/4.642162c5.js"><link rel="prefetch" href="/standard/assets/js/5.3730c3d2.js"><link rel="prefetch" href="/standard/assets/js/6.169b96df.js"><link rel="prefetch" href="/standard/assets/js/7.2b6e93a3.js"><link rel="prefetch" href="/standard/assets/js/8.d13c589c.js"><link rel="prefetch" href="/standard/assets/js/9.836af9a0.js">
+    <link rel="stylesheet" href="/standard/assets/css/0.styles.252629f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/standard/" class="home-link router-link-active"><!----> <span class="site-name">开发规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="workspaces的使用"><a href="#workspaces的使用" class="header-anchor">#</a> workspaces的使用</h1> <h2 id="项目结构"><a href="#项目结构" class="header-anchor">#</a> 项目结构</h2> <div class="language-markdown extra-class"><pre class="language-markdown"><code>|-- standard
+|      |--packages
+|      |      |-- workspace-a
+|      |      |      |--package.json
+|      |      |-- workspace-b
+|      |      |      |--package.json
+|      |--package.json
+|...
+</code></pre></div><h2 id="为什么使用它"><a href="#为什么使用它" class="header-anchor">#</a> 为什么使用它</h2> <div class="language- extra-class"><pre class="language-text"><code>    1、使项目的依赖关系可以链接在一起，可以相互依赖项目的工作区，同时始终使用最新的可用代码。
+     这也是一个相对于yarn link更好的机制，因为它只影响你的工作空间树，而不是整个系统。
+    2、对于每个项目，Yarn将使用一个单独的锁文件而不是为每个工程使用一个不同的锁文件，这意味着更少的冲突和更容易的审查
+</code></pre></div><h2 id="如何使用它"><a href="#如何使用它" class="header-anchor">#</a> 如何使用它</h2> <p>1.新建一个根文件夹用来放所有的项目，初始化一个package.json 文件</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workspaces&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;workspace-a&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;workspace-b&quot;</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>或者 也接受glob模式</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workspaces&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;packages/*&quot;</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2.&quot;workspace-a&quot;, &quot;workspace-b&quot; 是需要管理的子项目，都有自己的 package.json
+workspace-a/package.json:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;workspace-a&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;cross-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.0.5&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>3.在根目录下运行 yarn install</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/standard/assets/js/app.afa9e7b9.js" defer></script><script src="/standard/assets/js/2.333b2885.js" defer></script><script src="/standard/assets/js/28.bf45fa5d.js" defer></script>
+  </body>
+</html>

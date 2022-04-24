@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Stylelint-order | 开发规范</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="前端开发规范">
+    
+    <link rel="preload" href="/standard/assets/css/0.styles.252629f3.css" as="style"><link rel="preload" href="/standard/assets/js/app.afa9e7b9.js" as="script"><link rel="preload" href="/standard/assets/js/2.333b2885.js" as="script"><link rel="preload" href="/standard/assets/js/15.b2eadcff.js" as="script"><link rel="prefetch" href="/standard/assets/js/10.10c9e6b9.js"><link rel="prefetch" href="/standard/assets/js/11.cc0ebb4a.js"><link rel="prefetch" href="/standard/assets/js/12.b7d2c769.js"><link rel="prefetch" href="/standard/assets/js/13.62609024.js"><link rel="prefetch" href="/standard/assets/js/14.4b3b23a7.js"><link rel="prefetch" href="/standard/assets/js/16.d27cf8a7.js"><link rel="prefetch" href="/standard/assets/js/17.06f69259.js"><link rel="prefetch" href="/standard/assets/js/18.5925d2fc.js"><link rel="prefetch" href="/standard/assets/js/19.48150cec.js"><link rel="prefetch" href="/standard/assets/js/20.79b0b899.js"><link rel="prefetch" href="/standard/assets/js/21.09244465.js"><link rel="prefetch" href="/standard/assets/js/22.15849aa4.js"><link rel="prefetch" href="/standard/assets/js/23.2d3fab8c.js"><link rel="prefetch" href="/standard/assets/js/24.b031e604.js"><link rel="prefetch" href="/standard/assets/js/25.88b45d54.js"><link rel="prefetch" href="/standard/assets/js/26.7793f56a.js"><link rel="prefetch" href="/standard/assets/js/27.741bd2ad.js"><link rel="prefetch" href="/standard/assets/js/28.bf45fa5d.js"><link rel="prefetch" href="/standard/assets/js/3.5d30b8ab.js"><link rel="prefetch" href="/standard/assets/js/4.642162c5.js"><link rel="prefetch" href="/standard/assets/js/5.3730c3d2.js"><link rel="prefetch" href="/standard/assets/js/6.169b96df.js"><link rel="prefetch" href="/standard/assets/js/7.2b6e93a3.js"><link rel="prefetch" href="/standard/assets/js/8.d13c589c.js"><link rel="prefetch" href="/standard/assets/js/9.836af9a0.js">
+    <link rel="stylesheet" href="/standard/assets/css/0.styles.252629f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/standard/" class="home-link router-link-active"><!----> <span class="site-name">开发规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/standard/rules/introduction.html" class="nav-link">
+  规范
+</a></div><div class="nav-item"><a href="/standard/guide/introduction.html" class="nav-link">
+  教程
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/guide/tools/stylelint-order.html" aria-current="page" class="active sidebar-link">Stylelint-order</a></li><li><a href="/standard/guide/tools/commit-linter.html" class="sidebar-link">Commit-linter</a></li><li><a href="/standard/guide/tools/git-command.html" class="sidebar-link">Git Command</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/standard/guide/project/structure-in-action.html" class="sidebar-link">项目结构优化实战</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="stylelint-order"><a href="#stylelint-order" class="header-anchor">#</a> Stylelint-order</h1> <h3 id="简单介绍-stylelint"><a href="#简单介绍-stylelint" class="header-anchor">#</a> 简单介绍 Stylelint</h3> <p>stylelint 是css代码审查工具，只是强化了前端开发人员更加注重 CSS的书写规范，增强代码可读性。
+与ESLint类似, 也可以是通过定义一系列的编码风格规则帮助我们避免在样式表中出现错误
+例如一些细微的错误，单词拼错、无效十六进制颜色或<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties#tricky_edge_cases" target="_blank" rel="noopener noreferrer">重写简写属性<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>等</p> <h3 id="stylelint-order-2"><a href="#stylelint-order-2" class="header-anchor">#</a> Stylelint-order</h3> <p>stylelint-order 是 stylyelint的一个插件包，一个校验 css 属性顺序的 插件，需要配合stylelint 插件一起使用。
+可以让我们的代码样式更加整洁，当然我们可以不用限制的很死，但是大体的代码框架可以写的一样</p> <h4 id="为什么要使用-stylelint-order"><a href="#为什么要使用-stylelint-order" class="header-anchor">#</a> 为什么要使用 stylelint-order ?</h4> <p>可以看两个例子</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/*例子1：*/</span>
+<span class="token selector">a</span> <span class="token punctuation">{</span>
+	<span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">align-item</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/*例子2：*/</span>
+<span class="token selector">a</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+    <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+    <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们可以清晰的看出来 例子2 可以更加的直观。这就是为什么在原来使用stylelint 校验的基础上还要添加 stylelint-order 来对
+于属性的顺序进行校验，但是可以不用严格的对每个属性的字母顺序也进行校验，我们可以支队模块内容顺序进行校验。</p> <h3 id="如何使用-stylelint-order"><a href="#如何使用-stylelint-order" class="header-anchor">#</a> 如何使用 Stylelint-order</h3> <div class="language-shell script extra-class"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> stylelint --save-dev
+</code></pre></div><h4 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h4> <p>以下配置是结合 <a href="">prettier</a>工具一起使用的
+具体的配置可以参考 <a href="https://github.com/hudochenkov/stylelint-order/blob/master/rules/order/README.md#examples" target="_blank" rel="noopener noreferrer">stylelint-order<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>1、安装相关依赖</p> <div class="language-shell script extra-class"><pre class="language-shell"><code><span class="token function">yarn</span> <span class="token function">add</span> -D prettier stylelint-prettier stylelint-order stylelint-config-standard stylelint-prettier/recommended
+</code></pre></div><p>2、项目根目录 新建 .stylelint.js 文件 添加以下相关配置</p> <p>具体的 stylelint-order 配置可以参考 <a href="https://github.com/hudochenkov/stylelint-order/blob/master/rules/order/README.md#examples" target="_blank" rel="noopener noreferrer">stylelint-order<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'stylelint-prettier'</span><span class="token punctuation">,</span> <span class="token string">'stylelint-order'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'stylelint-config-standard'</span><span class="token punctuation">,</span> <span class="token string">'stylelint-prettier/recommended'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">'prettier/prettier'</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string-property property">'selector-pseudo-class-no-unknown'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">ignorePseudoClasses</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'global'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 指定声明块内的内容顺序</span>
+    <span class="token string-property property">'order/order'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'custom-properties'</span><span class="token punctuation">,</span> <span class="token string">'declarations'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 指定声明块中的属性顺序。</span>
+    <span class="token string-property property">'order/properties-order'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">emptyLineBefore</span><span class="token operator">:</span> <span class="token string">'never'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">properties</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'position'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">emptyLineBefore</span><span class="token operator">:</span> <span class="token string">'never'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">properties</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'display'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">emptyLineBefore</span><span class="token operator">:</span> <span class="token string">'never'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">properties</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'width'</span><span class="token punctuation">,</span> <span class="token string">'height'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">emptyLineBefore</span><span class="token operator">:</span> <span class="token string">'never'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">properties</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'font'</span><span class="token punctuation">,</span> <span class="token string">'color'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">emptyLineBefore</span><span class="token operator">:</span> <span class="token string">'never'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">properties</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'border'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">emptyLineBefore</span><span class="token operator">:</span> <span class="token string">'never'</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">properties</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'transform'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">unspecified</span><span class="token operator">:</span> <span class="token string">'bottom'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">emptyLineBeforeUnspecified</span><span class="token operator">:</span> <span class="token string">'threshold'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">emptyLineMinimumPropertyThreshold</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h4 id="校验"><a href="#校验" class="header-anchor">#</a> 校验</h4> <div class="language-shell script extra-class"><pre class="language-shell"><code>npx stylelint src/demo.css --fix // 校验加格式化
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/standard/guide/tools/commit-linter.html">
+        Commit-linter
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/standard/assets/js/app.afa9e7b9.js" defer></script><script src="/standard/assets/js/2.333b2885.js" defer></script><script src="/standard/assets/js/15.b2eadcff.js" defer></script>
+  </body>
+</html>
