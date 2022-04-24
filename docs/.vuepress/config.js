@@ -3,7 +3,6 @@ module.exports = {
   title: '开发规范',
   description: '前端开发规范',
   themeConfig: {
-    logo: '/images/logo.png',
     nav: [
       { text: '规范', link: '/rules/introduction' },
       { text: '教程', link: '/guide/introduction' },
