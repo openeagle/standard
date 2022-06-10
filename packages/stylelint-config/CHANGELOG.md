@@ -1,3 +1,10 @@
+## @openeagle/stylelint-config [1.0.3](https://github.com/openeagle/standard/compare/@openeagle/stylelint-config@1.0.2...@openeagle/stylelint-config@1.0.3) (2022-06-10)
+
+
+### Bug Fixes
+
+* 完善 stylelint-order ([8e6e26d](https://github.com/openeagle/standard/commit/8e6e26d0d51de37e785f75a64f5375da3fd0fdbc))
+
 ## @openeagle/stylelint-config [1.0.2](https://github.com/openeagle/standard/compare/@openeagle/stylelint-config@1.0.1...@openeagle/stylelint-config@1.0.2) (2022-04-16)
 
 
