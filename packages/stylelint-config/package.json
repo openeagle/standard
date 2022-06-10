@@ -2,6 +2,10 @@
   "name": "@openeagle/stylelint-config",
   "version": "1.0.2",
   "main": "index.js",
+  "files": [
+    "rules",
+    "index.js"
+  ],
   "scripts": {
     "pre-commit": "lint-staged"
   },

@@ -6,6 +6,7 @@ module.exports = {
     require.resolve('./rules/style'),
     require.resolve('./rules/unit'),
     require.resolve('./rules/value'),
+    require.resolve('./rules/order'),
   ],
   overrides: [
     {
