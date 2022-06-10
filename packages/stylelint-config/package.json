@@ -21,7 +21,7 @@
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.0",
     "stylelint-config-prettier": "^9.0.0",
-    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard": "^26.0.0",
     "stylelint-prettier": "^2.0.0",
     "stylelint-order": "^5.0.0"
   },
@@ -29,7 +29,7 @@
     "@openeagle/eslint-config-base": "^1.0.0",
     "@openeagle/prettier-config": "^1.0.0",
     "eslint": "^8.0.0",
-    "lint-staged": "^12.0.0",
+    "lint-staged": "^13.0.1",
     "prettier": "^2.0.0",
     "stylelint": "^14.0.0"
   }

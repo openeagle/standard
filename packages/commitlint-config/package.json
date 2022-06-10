@@ -10,17 +10,17 @@
     "*.js": "eslint --fix"
   },
   "peerDependencies": {
-    "eslint": ">= 7.0.0"
+    "eslint": ">= 7.0.0",
+    "@commitlint/cli": "^17.0.2"
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^16.2.1",
-    "@commitlint/cli": "^16.2.3"
+    "@commitlint/config-conventional": "^17.0.2"
   },
   "devDependencies": {
     "@openeagle/eslint-config-base": "^1.0.0",
     "@openeagle/prettier-config": "^1.0.0",
     "eslint": "^8.0.0",
-    "lint-staged": "^12.0.0",
+    "lint-staged": "^13.0.1",
     "prettier": "^2.0.0",
     "stylelint": "^14.0.0"
   },

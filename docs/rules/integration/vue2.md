@@ -12,7 +12,7 @@
     "@openeagle/prettier-config": "^1.0.9",
     "eslint": "^8.0.0",
     "husky": "^7.0.1",
-    "lint-staged": "^12.0.0",
+    "lint-staged": "^13.0.1",
     "prettier": "^2.0.0",
     "stylelint": "^14.0.0"
   }
