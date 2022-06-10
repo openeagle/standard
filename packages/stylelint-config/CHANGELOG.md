@@ -1,3 +1,10 @@
+## @openeagle/stylelint-config [1.0.4](https://github.com/openeagle/standard/compare/@openeagle/stylelint-config@1.0.3...@openeagle/stylelint-config@1.0.4) (2022-06-10)
+
+
+### Bug Fixes
+
+* 升级第三方依赖版本 ([5274924](https://github.com/openeagle/standard/commit/5274924d449439516bb908b8f05edba2d825050f))
+
 ## @openeagle/stylelint-config [1.0.3](https://github.com/openeagle/standard/compare/@openeagle/stylelint-config@1.0.2...@openeagle/stylelint-config@1.0.3) (2022-06-10)
 
 
