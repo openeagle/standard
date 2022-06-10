@@ -1,3 +1,18 @@
+## @openeagle/eslint-config-node [1.0.2](https://github.com/openeagle/standard/compare/@openeagle/eslint-config-node@1.0.1...@openeagle/eslint-config-node@1.0.2) (2022-06-10)
+
+
+### Bug Fixes
+
+* 升级第三方依赖版本 ([5274924](https://github.com/openeagle/standard/commit/5274924d449439516bb908b8f05edba2d825050f))
+
+
+
+
+
+### Dependencies
+
+* **@openeagle/eslint-config-base:** upgraded to 1.0.2
+
 ## @openeagle/eslint-config-node [1.0.1](https://github.com/openeagle/standard/compare/@openeagle/eslint-config-node@1.0.0...@openeagle/eslint-config-node@1.0.1) (2022-04-16)
 
 
