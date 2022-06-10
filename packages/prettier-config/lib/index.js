@@ -19,4 +19,5 @@ module.exports = {
       options: markdown,
     },
   ],
+  plugins: [require('prettier-plugin-tailwindcss')],
 }
