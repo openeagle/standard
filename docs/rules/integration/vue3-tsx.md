@@ -11,7 +11,7 @@
     ```json
     {
       "devDependencies": {
-        "husky": "^7.0.1"
+        "husky": "^8.0.1"
       }
     }
     ```
@@ -24,7 +24,7 @@
         "@openeagle/eslint-config-vue": "^1.1.0",
         "@openeagle/stylelint-config": "^1.0.0",
         "eslint": "^8.0.0",
-        "husky": "^7.0.1",
+        "husky": "^8.0.1",
         "lint-staged": "^13.0.1",
         "prettier": "^2.0.0",
         "stylelint": "^14.0.0"
@@ -126,7 +126,7 @@ yarn workspaces run pre-commit
     "@openeagle/eslint-config-vue": "^1.1.0",
     "@openeagle/stylelint-config": "^1.0.0",
     "eslint": "^8.0.0",
-    "husky": "^7.0.1",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
     "prettier": "^2.0.0",
     "stylelint": "^14.0.0"
