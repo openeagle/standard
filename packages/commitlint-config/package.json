@@ -1,6 +1,6 @@
 {
   "name": "@openeagle/commitlint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "commit msg linter",
   "main": "index.js",
   "scripts": {
