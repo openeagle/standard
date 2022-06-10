@@ -33,8 +33,7 @@ chore：构建过程或辅助工具的变动
 ```json
 {
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.0.2",
-    "@commitlint/cli": "^17.0.2",
+    "@commitlint/cli": "^17.0.2"
   }
 }
 ```
