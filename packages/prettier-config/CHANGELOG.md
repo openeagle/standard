@@ -1,3 +1,10 @@
+## @openeagle/prettier-config [1.0.4](https://github.com/openeagle/standard/compare/@openeagle/prettier-config@1.0.3...@openeagle/prettier-config@1.0.4) (2022-06-20)
+
+
+### Bug Fixes
+
+* 调整代码最大行长度限制 ([cffeb76](https://github.com/openeagle/standard/commit/cffeb760a27bd2eb5a9cbbedb5e488f7379ae4eb))
+
 ## @openeagle/prettier-config [1.0.3](https://github.com/openeagle/standard/compare/@openeagle/prettier-config@1.0.2...@openeagle/prettier-config@1.0.3) (2022-06-10)
 
 
